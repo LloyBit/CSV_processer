@@ -16,6 +16,7 @@ pip install -r requirements.txt
 
 ```bash
 python main.py -f имя_файла(по умолчанию test_data из корня) -*(ваши аттрибуты) 
+python main.py -h # для информации по аттрибутам
 ```
 
 #### Примеры запуска
@@ -25,6 +26,7 @@ python main.py -f test_data.csv -o brand=desc
 python main.py -f test_data.csv -a price=avg 
 python main.py -w rating=asc
 ```
+
 
 Сочетание аттрибутов аггрегации и сортировки выдаст кастомную ошибку
 
