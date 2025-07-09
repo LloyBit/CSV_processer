@@ -38,7 +38,7 @@ def sort_datalist(datalist:list, column:str, way:str) -> list:
     desc = False
     if way == "desc":
         desc = True
-    sorty = sorted(datalist[1:], key=lambda x: x[datalist[0].index(column)], reverse=desc)
+    sorty = [datalist[0]] + sorted(datalist[1:], key=lambda x: x[datalist[0].index(column)], reverse=desc)
     return sorty
 
 # Изолируем инициализацию от сторонних модулей(тестов)
